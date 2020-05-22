@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=2.0, maximum-scale=2.0">
+    <title>Contact me</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&family=Montserrat:ital@1&family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css\call-back.css">
+    <link rel="icon" href="images\call-back.png">
+  </head>
+  <body>
+      <h2>Call me Back:-</h2>
+        <br><br>
+        <form action="mailto:roshankumar1996@gmail.com" method="post" enctype="text/plain">
+          <fieldset>
+            <legend>Please Enter Your Vaild Details</legend><br>
+            <label for="fname">First Name</label><br>
+            <input type="text" name="FirstName" id="fname" required><br>
+            <label for="lname">Last Name</label><br>
+            <input type="text" name="LastName" id="lname" required><br>
+            <label for="email">Email Id</label><br>
+            <input type="email" name="EmailId" id="email"><br>
+            <label for="mb no">Contact No.</label><br>
+            <input type="tel" name="Contactno" id="mb no" pattern="[0-9]{10}"placeholder="Enter ten digit phone no."autocomplete="off" required><br><br>
+            <label for="gender">Gender</label><br>
+            <input type="radio" name="Gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" name="Gender" value="female">
+            <label for="female">Female</label><br>
+            <input type="radio" name="Gender" value="other">
+            <label for="other">Other</label><br><br>
+            <label>Please choose in which kind of Website you are intersted</label>
+            <select id="apps" name="Apps">
+              <option value="Educational">Educational</option>
+              <option value="Sports">Sports</option>
+              <option value="Restorents" selected>Restorents</option>
+              <option value="Hotels">Hotels</option>
+              <option value="cafe">Cafe</option>
+              <option value="Automobile">Automobile</option>
+            </select><br><br>
+            <label>Please select your Country</label>
+            <input list="country" name="country"placeholder="please select your country"required>
+            <datalist id="country">
+              <option value="India">India</option>
+              <option value="China">China</option>
+              <option value="USA">USA</option>
+              <option value="pak">Pakistan</option>
+            </datalist><br><br>
+            <label for="Message">Message</label><br>
+            <textarea name="Message" rows="5" cols="30"placeholder="Please write your message here"spellcheck="true"></textarea><br><br>
+            <label><strong>By clicking the checkbox that means You Agree Our all term and condition</strong></label>
+            <input type="checkbox" name="" value="">
+            <input type="submit" name="Submit">
+            <input type="reset">
+
+          </fieldset>
+        </form>
+  </body>
+</html>
